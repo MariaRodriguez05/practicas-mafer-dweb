@@ -1,0 +1,150 @@
+/* Reseteo de márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo y fuente general */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  header img {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header .abstract {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Iconos */
+  .icon {
+    margin-right: 10px;
+  }
+  
+  /* Secciones */
+  .section {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+  }
+  
+  .section ul {
+    list-style-type: none;
+  }
+  
+  .section ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Flexbox para skills */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Formulario de contacto */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer .socials a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  footer .socials a:hover {
+    color: #007BFF;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .section h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
